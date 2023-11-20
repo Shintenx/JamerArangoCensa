@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+	<meta name="author" content="Jamer Arango">
+    <link rel="stylesheet" href="css/styles.css">
+	<meta name="descriotion" content="C&S:Cleaners">
+    <title>C&S: Cleaners</title>
+</head>
+<body>
+    <h1>
+        <b><i> C&S:Cleaners</i></b>
+    </h1>
+    <hr>
+    <p>
+        Aquí va la descripción de la empresa
+    </p>
+        <ul>
+        <li>objetivos 1</li>
+        <li>objetivos 2</li>
+        <li>objetivos 3</li>
+        </ul>
+    <p>
+    texto de metas y logros
+    </p>
+    <ol>
+        <li>Meta 1</li>
+        <li>Meta 2</li>
+        <li>Meta 3</li>
+    </ol>
+
+    <p>Logo de la empresa</p>
+
+    <img src="img/Logo.jpeg" alt="Logo" width="360" height="260"/>
+
+    <p>
+        Experiencias
+    
+    </p>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/tDg5AYqrKsE?si=rndANNRo-YJPsb32" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <br>
+    <br>
+    <p>
+        
+        <b>Paquetes y precios</b>
+        <table border="1"> 
+           
+            <caption>Servicios</caption>
+            <br>
+        <thead>
+			<tr>
+				
+				<th>Paquete</th>
+				<th>Precio</th>
+				<th>Tiempo</th>
+			</tr>
+		</thead>
+        <tbody>
+			
+			<tr>
+				<td>Limpieza Express</td>
+				<td>$90.000</td>
+				<td>1 H 30 mins</td>
+			</tr>
+			<tr>
+				<td>Limpieza Profunda</td>
+				<td>$170.000</td>
+				<td>4h a 5h </td>
+			</tr>
+		</tbody>
+        </table>
+        <h1>Contáctanos</h1>
+        <form action="#" method="post"autocomplete="off">
+            <p>
+				<label for="nombre">Nombre:</label>
+				
+				<input type="text" id="nombre" name="nombre" size="20" maxlength="40" placeholder="Introduce tu nombre" required/>
+			</p>
+            <p>
+				<label for="correo">Correo:</label>
+				<input type="email" id="correo" name="correo"placeholder="Introduce tu correo" required/> 
+			</p>
+            <p>
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" pattern="[0-9]{10}" placeholder="Introduce tu numero"required />
+            </p>
+
+            <p>
+				<button type="submit">Enviar</button> 
+			</p>
+
+
+
+
+        </form>
+        <script>
+            document.getElementById("telefono").addEventListener("input", function(event) {
+                var input = event.target;
+                var valor = input.value;
+    
+                
+                input.value = valor.replace(/\D/g, '');
+    
+                
+                return !/\D/.test(valor);
+            });
+    
+            document.getElementById("telefono").addEventListener("paste", function(event) {
+                
+                event.preventDefault();
+            });
+        </script>
+    </p>
+    <h2>
+        Nuestras Redes
+    </h2>
+    <a href="https://www.facebook.com/">Facebook</a> 
+    <a href="https://www.youtube.com/">Youtube</a> 
+    <a href="https://www.instagram.com/">Instagram</a>
+
+</body>
+</html>
